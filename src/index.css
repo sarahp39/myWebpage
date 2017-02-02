@@ -1,1 +1,24 @@
 /* Your CSS goes here */
+
+.container{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+/* Small Screen */
+@media (min-width: 768px){
+
+}
+
+/* Medium Screen */
+@media (min-width: 992px){
+
+}
+
+/* Large Screen */
+@media (min-width: 1200px){
+
+}

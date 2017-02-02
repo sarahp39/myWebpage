@@ -1,14 +1,36 @@
 import React from 'react';
 
+
 //a "root" component
 class App extends React.Component {
   //how to display this component
   render() {
     return (
       <div>
-        <h1>Hello React!</h1>
-        <p>If you can see this, then things are working!</p>
-        <p>Modify the <code>src/App.js</code> file to define your components</p>
+        <Header />
+
+      </div>
+    );
+  }
+}
+
+class Header extends React.Component {
+  render() {
+    return (
+      <div id = 'banner'> 
+        <div>
+          <h1>Sarah Ann Phillips</h1>
+        </div>
+      </div>
+    );
+  }
+}
+
+class NavBar extends React.Component {
+  render() {
+    return(
+      <div>
+      --> I NEED TO MAKE A NAV BAR WHEN I GET THE LINKS
       </div>
     );
   }
