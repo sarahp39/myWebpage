@@ -1,19 +1,15 @@
+/*eslint no-unused-vars: "off"*/ //don't show warnings for unused
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Router, Route, hashHistory} from 'react-router';
-import App from './App'; //import our component
+import App from './PetApp';
+import {AboutPage, ResourcesPage} from './About';
+import AdoptPage from './AdoptDog';
 
-//can load other CSS files (e.g,. Bootstrap) here
+//css files
+import './pet-app.css'; //load CSS for app
+import 'bootstrap/dist/css/bootstrap.css';
 
-//load our CSS file
-import './index.css';
-
-//render the Application view
 ReactDOM.render(
-  <Router history = {hashHistory}>
-    <Route path = '/'component = './App'>
-    </Route>
-  </Router>,
-  document.getElementbyID('root')
-
+  <App/>,
+  document.getElementById('root')
 );
